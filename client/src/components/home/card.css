@@ -1,0 +1,73 @@
+.card {
+  border-color: transparent;
+}
+.card-footer {
+  background: #ffffff;
+  border-top: transparent;
+}
+.img-block {
+  position: relative;
+}
+a.blog {
+  position: absolute;
+  top: 3em;
+  left: 0;
+  padding: 0.3em 1.8em;
+  background: #fa4b2a;
+  font-family: "Roboto Condensed", sans-serif !important;
+}
+.card-paragraph {
+  color: #777777;
+  font-size: 15px !important;
+  font-family: "Open Sans", sans-serif !important;
+}
+h3 .heading {
+  color: #fa4b2a;
+  font-family: "Roboto Condensed", sans-serif !important;
+}
+.card-paragraph .sub-heading {
+  color: #777777;
+  font-family: "Roboto Condensed", sans-serif !important;
+  margin-bottom: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.card-paragraph hr {
+  padding: 0rem !important;
+  margin: 0rem !important;
+}
+.blog-post {
+  font-size: 14px;
+  color: #777777;
+}
+i.fa-google {
+  background: #384853;
+}
+i.fa-facebook-f {
+  background: #337ab7;
+}
+i.fa-twitter {
+  background: #2cc5f0;
+}
+i.fa-envelope-open {
+  background: #738a8d;
+}
+i.fa-plus {
+  background: #f8694d;
+}
+@media (max-width: 568px) {
+  i.fa-google {
+    font-size: 18px;
+  }
+  i.fa-facebook-f {
+    font-size: 18px;
+  }
+  i.fa-twitter {
+    font-size: 18px;
+  }
+  i.fa-envelope-open {
+    font-size: 18px;
+  }
+  i.fa-plus {
+    font-size: 18px;
+  }
+}

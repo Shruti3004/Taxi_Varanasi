@@ -1,0 +1,35 @@
+.nav-background {
+  background: #fa4b2a !important;
+}
+.navbar-item {
+  border-left: 0.1px solid #e5e5e5;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-family: "Roboto Condensed", sans-serif !important;
+  transition: all 0.5s ease-in-out;
+}
+.navbar-item-last {
+  border-right: 0.1px solid #e5e5e5;
+}
+.navbar-item:hover,
+.navbar-item:active,
+.navbar-item:focus,
+.active {
+  background: #464646;
+  text-decoration: none !important;
+}
+.icon-size {
+  font-size: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .navbar-item {
+    border-left: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid #e5e5e5;
+  }
+  .navbar-item-last {
+    border-right: none;
+    border-bottom: none;
+  }
+}
