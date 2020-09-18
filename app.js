@@ -10,9 +10,9 @@ const bodyParser = require("body-parser");
 // Init express
 const app = express();
 
-app.get("/", (req, res) => {
-  res.send("Server Running...");
-});
+// app.get("/", (req, res) => {
+//   res.send("Server Running...");
+// });
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
