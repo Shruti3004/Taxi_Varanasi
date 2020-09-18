@@ -35,7 +35,7 @@ module.exports = (app) => {
 
     var mail = {
       from: "taxiinvaranasiii@gmail.com",
-      to: "abhinavpandey.1996@gmail.com",
+      to: "mail2shruti.ag@gmail.com",
       subject: "Taxi in Varanasi",
       html: content,
     };
