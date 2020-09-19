@@ -15,7 +15,7 @@ function Card({ article }) {
     <React.Fragment>
       <div className="container">
         <div className="row no-gutters">
-          <div className="col-lg-8 col-md-8 col-sm-12 col-12">
+          <div className="col-lg-8 col-md-8 col-sm-12 col-12 mx-auto">
             <div className="row no-gutters">
               <div className="col-lg-1 col-md-1 col-sm-1 col-1 pt-4 pr-0 mr-0">
                 <i className="fab fa-twitter fa-2x py-2 text-white text-center w-100" />
