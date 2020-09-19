@@ -37,11 +37,13 @@ function Card({ article }) {
                     </div>
                   </div>
                   <div className="card-footer px-0 pb-0">
-                    <h3>
-                      <a href="/" className="heading font-weight-bold ">
-                        {heading}
-                      </a>
-                    </h3>
+                    <Link to="/">
+                      <h3>
+                        <div className="heading font-weight-bold ">
+                          {heading}
+                        </div>
+                      </h3>
+                    </Link>
                     <p className="card-paragraph p-0">
                       {paragraph}
                       <Link to="/places">
