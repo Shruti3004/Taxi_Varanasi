@@ -43,6 +43,15 @@ function Places() {
             cost.
           </h2>
           <hr />
+          <div className="blog-post mb-3 mt-0">
+            <i className="fas fa-user" /> 4500+ pickups&nbsp;&nbsp;&nbsp;
+            <i className="fas fa-calendar" /> We will wait for
+            you&nbsp;&nbsp;&nbsp;
+            <i className="fas fa-comment" /> Fastest Cab in
+            Varanasi&nbsp;&nbsp;&nbsp;
+            <i className="fas fa-heart" /> 5 favourites&nbsp;&nbsp;&nbsp;
+            <i className="fas fa-eye" /> 1.128k views
+          </div>
         </div>
       </div>
     </React.Fragment>
