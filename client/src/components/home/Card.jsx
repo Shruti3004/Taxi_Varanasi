@@ -31,10 +31,10 @@ function Card({ article }) {
                       src={image}
                       className="card-img-top img-fluid rounded"
                       alt="product"
-                    />
-                    <a className="blog text-white font-weight-bold" href="/">
+                    />                    
+                    <div className="blog text-white font-weight-bold">
                       {imageBlog}
-                    </a>
+                    </div>
                   </div>
                   <div className="card-footer px-0 pb-0">
                     <h3>
