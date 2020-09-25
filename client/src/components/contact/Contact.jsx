@@ -4,7 +4,7 @@ import { useGoogleMaps } from "react-hook-google-maps";
 function Contact() {
   const { ref, map, google } = useGoogleMaps(
     // Use your own API key, you can get one from Google (https://console.cloud.google.com/google/maps-apis/overview)
-    "AIzaSyC4Z5Qz97EWcoCczNn2IcYvaYG0L9pe6Rk",
+    "AIzaSyDVx0bTZJXqg-fFmMbvoDCy7JRbrN2t3uM",
     // NOTE: even if you change options later
     {
       center: { lat: 0, lng: 0 },
