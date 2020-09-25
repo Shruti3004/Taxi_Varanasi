@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./newHomePage.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function NewHomePage() {
   const [nav1, setNav1] = useState(null);
@@ -20,6 +20,7 @@ function NewHomePage() {
     slidesToScroll: 1,
     arrows: false,
     fade: true,
+    dots: true,
     asNavFor: ".slider-nav",
   };
 
@@ -27,11 +28,11 @@ function NewHomePage() {
     slidesToShow: 3,
     slidesToScroll: 1,
     asNavFor: ".slider-for",
-    dots: true,
+    // dots: true,
     centerMode: true,
     swipeToSlide: true,
     focusOnSelect: true,
-    centerPadding: "1px",
+    // centerPadding: "-20px",
   };
 
   const slidesData = [
@@ -70,22 +71,6 @@ function NewHomePage() {
   return (
     <div className="App">
       <div className="slider-wrapper">
-        <Slider
-          {...settingsMain}
-          asNavFor={nav2}
-          ref={(slider) => setSlider1(slider)}
-        >
-          {slidesData.map((slide) => (
-            <div className="slick-slide" key={slide.id}>
-              <h2 className="slick-slide-title">{slide.title}</h2>
-              <img
-                className="slick-slide-image img-fluid"
-                src={`https://picsum.photos/800/400?img=${slide.id}`}
-              />
-              <label className="slick-slide-label">{slide.label}</label>
-            </div>
-          ))}
-        </Slider>
         <div className="thumbnail-slider-wrap">
           <Slider
             {...settingsThumbs}
@@ -102,6 +87,22 @@ function NewHomePage() {
             ))}
           </Slider>
         </div>
+        <Slider
+          {...settingsMain}
+          asNavFor={nav2}
+          ref={(slider) => setSlider1(slider)}
+        >
+          {slidesData.map((slide) => (
+            <div className="slick-slide" key={slide.id}>
+              <h2 className="slick-slide-title">{slide.title}</h2>
+              <img
+                className="slick-slide-image img-fluid"
+                src={`https://picsum.photos/800/400?img=${slide.id}`}
+              />
+              <label className="slick-slide-label">{slide.label}</label>
+            </div>
+          ))}
+        </Slider>
       </div>
     </div>
   );

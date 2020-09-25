@@ -22,6 +22,9 @@ body {
 ::placeholder {
   font-family: "Roboto Condensed", sans-serif;
 }
+:root {
+  --darkOrange: #fa4b2a;
+}
 li {
   list-style: none;
   margin: 0;
