@@ -53,7 +53,7 @@ function NewHomePage() {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-lg-10 col-md-12 col-sm-12 col-12 mb-5 mx-auto">
+        <div className="col-lg-10 col-md-12 col-sm-12 col-12 mb-5 mt-3 mx-auto">
           <Slider
             {...settingsThumbs}
             asNavFor={nav1}
@@ -81,6 +81,18 @@ function NewHomePage() {
               </div>
             ))}
           </Slider>
+        </div>
+      </div>
+      <div className="row no-gutters">
+        <div className="col-lg-3 col-md-3 col-5 col-sm-5 mx-auto">
+          <div className="book-now-new text-white font-weight-bold active">
+            Book Now
+          </div>
+        </div>
+        <div className="col-lg-3 col-md-3 col-5 col-sm-5 mx-auto">
+          <div className="call-now text-blue bg-white font-weight-bold active">
+            Call Now
+          </div>
         </div>
       </div>
     </div>
