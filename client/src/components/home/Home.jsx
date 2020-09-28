@@ -6,8 +6,8 @@ import NewHomePage from "./NewHomePage";
 function Home() {
   return (
     <React.Fragment>
-      <HomeCarousel />
-      <HomeCards />
+      {/* <HomeCarousel /> */}
+      {/* <HomeCards /> */}
       <NewHomePage />
     </React.Fragment>
   );

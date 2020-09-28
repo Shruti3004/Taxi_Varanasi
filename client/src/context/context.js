@@ -5,6 +5,7 @@ import { DataKashiVishwanath } from "../data/kashi-vishwanath-darshan";
 import { DataCarHire } from "../data/car-hire-in-varanasi";
 import { DataAbout } from "../data/about-taxi-in-varanasi";
 import { DataHome } from "../data/home";
+import { DataNewHome } from "../data/newHome";
 
 export const DetailsContext = React.createContext();
 
@@ -16,6 +17,7 @@ export function DetailsProvider({ children }) {
     carHire: DataCarHire,
     about: DataAbout,
     home: DataHome,
+    newHome: DataNewHome,
   };
   const [state, setState] = useState(initialState);
   return (
