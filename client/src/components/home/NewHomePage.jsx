@@ -28,14 +28,12 @@ function NewHomePage() {
     asNavFor: ".slider-nav",
     autoplay: true,
     autoplaySpeed: 4000,
-    // mobileFirst: true,
   };
 
   const settingsThumbs = {
     slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: ".slider-for",
-    // dots: true,
     centerMode: true,
     swipeToSlide: true,
     focusOnSelect: true,
@@ -89,6 +87,22 @@ function NewHomePage() {
       <div className="row">
         <div className="col-lg-10 col-md-12 col-sm-12 col-12 mb-5 mx-auto">
           <Slider
+            {...settingsThumbs}
+            asNavFor={nav1}
+            ref={(slider) => setSlider2(slider)}
+          >
+            {article.map((slide) => (
+              <div className="slick-slide" key={slide.id}>
+                <img
+                  className="slick-slide-image-thumbnail img-fluid "
+                  src={slide.image}
+                  height="50"
+                  width="50"
+                />
+              </div>
+            ))}
+          </Slider>
+          <Slider
             {...settingsMain}
             asNavFor={nav2}
             ref={(slider) => setSlider1(slider)}
@@ -98,7 +112,6 @@ function NewHomePage() {
                 <img className="slick-slide-image img-fluid w-100" src={auto} />
               </div>
             ))}
-            {/* <img className="slick-slide-image img-fluid w-100" src={auto} /> */}
           </Slider>
         </div>
       </div>
