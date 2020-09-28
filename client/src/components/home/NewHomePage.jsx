@@ -35,6 +35,7 @@ function NewHomePage() {
     slidesToScroll: 1,
     asNavFor: ".slider-for",
     centerMode: true,
+    arrows: false,
     swipeToSlide: true,
     focusOnSelect: true,
     mobileFirst: true,
@@ -48,39 +49,6 @@ function NewHomePage() {
       },
     ],
   };
-
-  const slidesData = [
-    {
-      id: 1,
-      title: "repellendus id ullam",
-      label: "Dolorem officiis temporibus.",
-    },
-    {
-      id: 2,
-      title: "excepturi consequatur est",
-      label: "Officia non provident dolor esse et neque.",
-    },
-    {
-      id: 3,
-      title: "eius doloribus blanditiis",
-      label: "Ut recusandae vel vitae molestiae id soluta.",
-    },
-    {
-      id: 4,
-      title: "nihil voluptates delectus",
-      label: "Qui vel consequatur recusandae illo repellendus.",
-    },
-    {
-      id: 5,
-      title: "nemo dolorem necessitatibus",
-      label: "Placeat odit velit itaque voluptatem.",
-    },
-    {
-      id: 6,
-      title: "dolorem quibusdam quasi",
-      label: "Adipisci officiis repudiandae.",
-    },
-  ];
 
   return (
     <div className="container">
@@ -110,76 +78,6 @@ function NewHomePage() {
             {article.map((slide) => (
               <div className="slick-slide" key={slide.id}>
                 <img className="slick-slide-image img-fluid w-100" src={auto} />
-              </div>
-            ))}
-          </Slider>
-        </div>
-      </div>
-      <div className="col-lg-10 col-md-12 col-sm-12 col-12 mb-5 mx-auto">
-        <div className="slider-wrapper">
-          <div className="thumbnail-slider-wrap">
-            <Slider
-              {...settingsThumbs}
-              asNavFor={nav1}
-              ref={(slider) => setSlider2(slider)}
-            >
-              {article.map((slide) => (
-                <div className="slick-slide" key={slide.id}>
-                  <img
-                    className="slick-slide-image-thumbnail img-fluid "
-                    src={slide.image}
-                    height="50"
-                    width="50"
-                  />
-                </div>
-              ))}
-            </Slider>
-          </div>
-          <Slider
-            {...settingsMain}
-            asNavFor={nav2}
-            ref={(slider) => setSlider1(slider)}
-          >
-            {slidesData.map((slide) => (
-              <div className="slick-slide" key={slide.id}>
-                <h2 className="slick-slide-title">{slide.title}</h2>
-                <img
-                  className="slick-slide-image img-fluid pb-5 w-100"
-                  src={auto}
-                />
-                {/* src={`https://picsum.photos/800/400?img=${slide.id}`} */}
-                <label className="slick-slide-label">
-                  <div className="table-responsive">
-                    <table className="table table-bordered">
-                      <thead>
-                        <tr>
-                          <th className="active text-white py-1">
-                            <p className="my-0 py-1">City Ride</p>
-                          </th>
-                          <th className="active text-white py-1">
-                            <p className="my-0 py-1">Outstation</p>
-                          </th>
-                          <th className="active text-white py-1">
-                            <p className="my-0 py-1">Airport</p>
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td className="bg-white text-blue py-1">
-                            <p className="my-0">&#x20B9;2000/day</p>
-                          </td>
-                          <td className="bg-white text-blue py-1">
-                            <p className="my-0">&#x20B9;10/km</p>
-                          </td>
-                          <td className="bg-white text-blue py-1">
-                            <p className="my-0">&#x20B9;800</p>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </label>
               </div>
             ))}
           </Slider>
