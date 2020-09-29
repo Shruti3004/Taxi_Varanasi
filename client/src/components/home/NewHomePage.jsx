@@ -64,8 +64,8 @@ function NewHomePage() {
                 <img
                   className="slick-slide-image-thumbnail img-fluid "
                   src={slide.image}
-                  height="50"
-                  width="50"
+                  height="80"
+                  width="80"
                 />
               </div>
             ))}
@@ -84,14 +84,18 @@ function NewHomePage() {
         </div>
       </div>
       <div className="row no-gutters mb-3">
-        <div className="col-lg-3 col-md-3 col-5 col-sm-5 mx-auto">
-          <div className="book-now-new text-white font-weight-bold active text-center py-2">
-            Book Now
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-3 col-5 col-sm-5 mx-auto">
-          <div className="call-now text-blue bg-white font-weight-bold text-center py-2">
-            Call Now
+        <div className="col-lg-8 col-md-8 col-sm-12 col-12 mx-auto">
+          <div className="row no-gutters">
+            <div className="col-lg-6 col-md-6 col-6 col-sm-6 mx-auto">
+              <div className="book-now-new text-white font-weight-bold active text-center py-2">
+                Book Now
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-6 col-6 col-sm-6 mx-auto">
+              <div className="call-now text-blue bg-white font-weight-bold text-center py-2">
+                Call Now
+              </div>
+            </div>
           </div>
         </div>
       </div>

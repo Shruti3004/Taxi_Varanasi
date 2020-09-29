@@ -2,7 +2,7 @@ export const DataNewHome = {
   article: [
     {
       id: 1,
-      image: "../images/seden.jpg",
+      image: "../images/dezireunactive.svg",
       imageBlog: "Pickup/Drop Rs-750",
       heading: "Book Cab At Varanasi Airport",
       paragraph:
@@ -19,7 +19,7 @@ export const DataNewHome = {
     },
     {
       id: 2,
-      image: "../images/xuv.png",
+      image: "../images/xuvunactive.svg",
       imageBlog: "Kashi Vishwanath Darshan",
       heading: "Kashi Vishwanath Darshan",
       paragraph:
@@ -35,7 +35,7 @@ export const DataNewHome = {
     },
     {
       id: 3,
-      image: "../images/miniBus.png",
+      image: "../images/minibusunactive.svg",
       imageBlog: "Culture",
       heading: "Book Car for Sarnath Darshan in Varanasi",
       paragraph:
@@ -51,7 +51,7 @@ export const DataNewHome = {
     },
     {
       id: 4,
-      image: "../images/blogFour.jpg",
+      image: "../images/busunactive.svg",
       imageBlog: "Durga Temple In Varanasi",
       heading: "Famous Mandir to visit in Varanasi",
       paragraph:
