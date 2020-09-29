@@ -83,14 +83,14 @@ function NewHomePage() {
           </Slider>
         </div>
       </div>
-      <div className="row no-gutters">
+      <div className="row no-gutters mb-3">
         <div className="col-lg-3 col-md-3 col-5 col-sm-5 mx-auto">
-          <div className="book-now-new text-white font-weight-bold active">
+          <div className="book-now-new text-white font-weight-bold active text-center py-2">
             Book Now
           </div>
         </div>
         <div className="col-lg-3 col-md-3 col-5 col-sm-5 mx-auto">
-          <div className="call-now text-blue bg-white font-weight-bold active">
+          <div className="call-now text-blue bg-white font-weight-bold text-center py-2">
             Call Now
           </div>
         </div>
