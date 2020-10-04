@@ -62,7 +62,7 @@ function NewHomePage() {
             {article.map((slide) => (
               <div className="slick-slide" key={slide.id}>
                 <div className="card">
-                  <div className="card-body pb-5 px-0 pt-0">
+                  <div className="card-body py-2 px-0 pt-0">
                     <img
                       className="slick-slide-image img-fluid w-100"
                       src={slide.image}
