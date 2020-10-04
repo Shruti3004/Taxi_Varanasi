@@ -67,52 +67,51 @@ function NewHomePage() {
                       className="slick-slide-image img-fluid w-100"
                       src={slide.image}
                     />
+                    <div className="table-responsive">
+                      <table className="table table-bordered">
+                        <thead>
+                          <tr className="pb-0">
+                            <th className="active">
+                              <p className="text-center text-white py-0 my-0">
+                                City Ride
+                              </p>
+                            </th>
+                            <th className="active">
+                              <p className="text-center text-white py-0 my-0">
+                                Outstation
+                              </p>
+                            </th>
+                            <th className="active">
+                              <p className="text-center text-white py-0 my-0">
+                                Airport
+                              </p>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr className="pb-0">
+                            <td className="bg-white">
+                              <p className="text-center font-weight-bold text-blue py-0 my-0">
+                                &#x20B9;2000km/day
+                              </p>
+                            </td>
+                            <td className="bg-white">
+                              <p className="text-center font-weight-bold text-blue py-0 my-0">
+                                &#x20B9;10km/hr
+                              </p>
+                            </td>
+                            <td className="bg-white">
+                              <p className="text-center font-weight-bold text-blue py-0 my-0">
+                                &#x20B9;800
+                              </p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
-                <div className="slick-slide-label">
-                  <div className="table-responsive">
-                    <table className="table table-bordered">
-                      <thead>
-                        <tr className="pb-0">
-                          <th className="active">
-                            <p className="text-center text-white py-0 my-0">
-                              City Ride
-                            </p>
-                          </th>
-                          <th className="active">
-                            <p className="text-center text-white py-0 my-0">
-                              Outstation
-                            </p>
-                          </th>
-                          <th className="active">
-                            <p className="text-center text-white py-0 my-0">
-                              Airport
-                            </p>
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr className="pb-0">
-                          <td className="bg-white">
-                            <p className="text-center font-weight-bold text-blue py-0 my-0">
-                              &#x20B9;2000km/day
-                            </p>
-                          </td>
-                          <td className="bg-white">
-                            <p className="text-center font-weight-bold text-blue py-0 my-0">
-                              &#x20B9;10km/hr
-                            </p>
-                          </td>
-                          <td className="bg-white">
-                            <p className="text-center font-weight-bold text-blue py-0 my-0">
-                              &#x20B9;800
-                            </p>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
+                <div className="slick-slide-label"></div>
               </div>
             ))}
           </Slider>
