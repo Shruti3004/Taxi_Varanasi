@@ -30,26 +30,6 @@ function NewHomePage() {
     autoplaySpeed: 4000,
   };
 
-  const settingsThumbs = {
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: ".slider-for",
-    centerMode: true,
-    arrows: false,
-    swipeToSlide: true,
-    focusOnSelect: true,
-    mobileFirst: true,
-    responsive: [
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
-
   return (
     <div className="container">
       <div className="row">
