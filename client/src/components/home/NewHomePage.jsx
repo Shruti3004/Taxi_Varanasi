@@ -53,7 +53,7 @@ function NewHomePage() {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-lg-10 col-md-12 col-sm-12 col-12 mb-5 mt-3 mx-auto">          
+        <div className="col-lg-10 col-md-12 col-sm-12 col-12 mb-5 mt-3 mx-auto">
           <Slider
             {...settingsMain}
             asNavFor={nav2}
@@ -61,7 +61,14 @@ function NewHomePage() {
           >
             {article.map((slide) => (
               <div className="slick-slide" key={slide.id}>
-                <img className="slick-slide-image img-fluid w-100" src={auto} />
+                <div className="card">
+                  <div className="card-body pb-5 px-0 pt-0">
+                    <img
+                      className="slick-slide-image img-fluid w-100"
+                      src={slide.image}
+                    />
+                  </div>
+                </div>
                 <div className="slick-slide-label">
                   <div className="table-responsive">
                     <table className="table table-bordered">

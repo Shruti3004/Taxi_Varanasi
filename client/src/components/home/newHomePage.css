@@ -6,6 +6,10 @@
   text-align: center;
   position: relative;
 }
+.card-body {
+  background: #fcead9 !important;
+  border: 0.5px solid transparent;
+}
 .slick-slide:focus {
   outline: none;
 }
