@@ -3,7 +3,13 @@ import "./newHomePage.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import auto from "../../images/sedenCard.png";
+import photo1 from "../../images/photo1.jpeg";
+import photo2 from "../../images/photo2.jpeg";
+import photo3 from "../../images/photo3.jpeg";
+import photo4 from "../../images/photo4.jpeg";
+import photo5 from "../../images/photo5.jpeg";
+import photo6 from "../../images/photo6.jpeg";
+import photo7 from "../../images/photo7.jpeg";
 import { DetailsContext } from "../../context/context";
 
 function NewHomePage() {
@@ -34,6 +40,56 @@ function NewHomePage() {
     <div className="container">
       <div className="row">
         <div className="col-lg-10 col-md-12 col-sm-12 col-12 mb-5 mt-3 mx-auto">
+          <section>
+            <div className="icons">
+              <div className="loop">
+                <div className="span one">
+                  <img src={photo1} />
+                </div>
+                <div className="span two">
+                  <img src={photo2} />
+                </div>
+                <div className="span three">
+                  <img src={photo3} />
+                </div>
+                <div className="span four">
+                  <img src={photo4} />
+                </div>
+                <div className="span five">
+                  <img src={photo5} />
+                </div>
+                <div className="span six">
+                  <img src={photo6} />
+                </div>
+                <div className="span seven">
+                  <img src={photo7} />
+                </div>
+              </div>
+              <div className="loop">
+                <div className="span one">
+                  <img src={photo1} />
+                </div>
+                <div className="span two">
+                  <img src={photo2} />
+                </div>
+                <div className="span three">
+                  <img src={photo3} />
+                </div>
+                <div className="span four">
+                  <img src={photo4} />
+                </div>
+                <div className="span five">
+                  <img src={photo5} />
+                </div>
+                <div className="span six">
+                  <img src={photo6} />
+                </div>
+                <div className="span seven">
+                  <img src={photo7} />
+                </div>
+              </div>
+            </div>
+          </section>
           <Slider
             {...settingsMain}
             asNavFor={nav2}
