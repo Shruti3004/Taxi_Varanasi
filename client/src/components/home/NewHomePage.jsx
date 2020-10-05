@@ -37,139 +37,141 @@ function NewHomePage() {
   };
 
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-10 col-md-12 col-sm-12 col-12 mb-5 mt-3 mx-auto">
-          <section>
-            <div className="icons">
-              <div className="loop">
-                <div className="span one">
-                  <img src={photo1} />
-                </div>
-                <div className="span two">
-                  <img src={photo2} />
-                </div>
-                <div className="span three">
-                  <img src={photo3} />
-                </div>
-                <div className="span four">
-                  <img src={photo4} />
-                </div>
-                <div className="span five">
-                  <img src={photo5} />
-                </div>
-                <div className="span six">
-                  <img src={photo6} />
-                </div>
-                <div className="span seven">
-                  <img src={photo7} />
-                </div>
-              </div>
-              <div className="loop">
-                <div className="span one">
-                  <img src={photo1} />
-                </div>
-                <div className="span two">
-                  <img src={photo2} />
-                </div>
-                <div className="span three">
-                  <img src={photo3} />
-                </div>
-                <div className="span four">
-                  <img src={photo4} />
-                </div>
-                <div className="span five">
-                  <img src={photo5} />
-                </div>
-                <div className="span six">
-                  <img src={photo6} />
-                </div>
-                <div className="span seven">
-                  <img src={photo7} />
-                </div>
-              </div>
+    <React.Fragment>
+      <section>
+        <div className="icons">
+          <div className="loop">
+            <div className="span one">
+              <img src={photo1} />
             </div>
-          </section>
-          <Slider
-            {...settingsMain}
-            asNavFor={nav2}
-            ref={(slider) => setSlider1(slider)}
-          >
-            {article.map((slide) => (
-              <div className="slick-slide" key={slide.id}>
-                <div className="card">
-                  <div className="card-body py-2 px-0 pt-0">
-                    <img
-                      className="slick-slide-image img-fluid w-100"
-                      src={slide.image}
-                    />
-                    <div className="table-responsive">
-                      <table className="table table-bordered">
-                        <thead>
-                          <tr className="pb-0">
-                            <th className="active">
-                              <p className="text-center text-white py-0 my-0">
-                                City Ride
-                              </p>
-                            </th>
-                            <th className="active">
-                              <p className="text-center text-white py-0 my-0">
-                                Outstation
-                              </p>
-                            </th>
-                            <th className="active">
-                              <p className="text-center text-white py-0 my-0">
-                                Airport
-                              </p>
-                            </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr className="pb-0">
-                            <td className="bg-white">
-                              <p className="text-center font-weight-bold text-blue py-0 my-0">
-                                &#x20B9;2000km/day
-                              </p>
-                            </td>
-                            <td className="bg-white">
-                              <p className="text-center font-weight-bold text-blue py-0 my-0">
-                                &#x20B9;10km/hr
-                              </p>
-                            </td>
-                            <td className="bg-white">
-                              <p className="text-center font-weight-bold text-blue py-0 my-0">
-                                &#x20B9;800
-                              </p>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+            <div className="span two">
+              <img src={photo2} />
+            </div>
+            <div className="span three">
+              <img src={photo3} />
+            </div>
+            <div className="span four">
+              <img src={photo4} />
+            </div>
+            <div className="span five">
+              <img src={photo5} />
+            </div>
+            <div className="span six">
+              <img src={photo6} />
+            </div>
+            <div className="span seven">
+              <img src={photo7} />
+            </div>
+          </div>
+          <div className="loop">
+            <div className="span one">
+              <img src={photo1} />
+            </div>
+            <div className="span two">
+              <img src={photo2} />
+            </div>
+            <div className="span three">
+              <img src={photo3} />
+            </div>
+            <div className="span four">
+              <img src={photo4} />
+            </div>
+            <div className="span five">
+              <img src={photo5} />
+            </div>
+            <div className="span six">
+              <img src={photo6} />
+            </div>
+            <div className="span seven">
+              <img src={photo7} />
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-10 col-md-12 col-sm-12 col-12 mb-5 mt-3 mx-auto">
+            <Slider
+              {...settingsMain}
+              asNavFor={nav2}
+              ref={(slider) => setSlider1(slider)}
+            >
+              {article.map((slide) => (
+                <div className="slick-slide" key={slide.id}>
+                  <div className="card">
+                    <div className="card-body py-2 px-0 pt-0">
+                      <img
+                        className="slick-slide-image img-fluid w-100"
+                        src={slide.image}
+                      />
+                      <div className="table-responsive">
+                        <table className="table table-bordered">
+                          <thead>
+                            <tr className="pb-0">
+                              <th className="active">
+                                <p className="text-center text-white py-0 my-0">
+                                  City Ride
+                                </p>
+                              </th>
+                              <th className="active">
+                                <p className="text-center text-white py-0 my-0">
+                                  Outstation
+                                </p>
+                              </th>
+                              <th className="active">
+                                <p className="text-center text-white py-0 my-0">
+                                  Airport
+                                </p>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr className="pb-0">
+                              <td className="bg-white">
+                                <p className="text-center font-weight-bold text-blue py-0 my-0">
+                                  &#x20B9;2000km/day
+                                </p>
+                              </td>
+                              <td className="bg-white">
+                                <p className="text-center font-weight-bold text-blue py-0 my-0">
+                                  &#x20B9;10km/hr
+                                </p>
+                              </td>
+                              <td className="bg-white">
+                                <p className="text-center font-weight-bold text-blue py-0 my-0">
+                                  &#x20B9;800
+                                </p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
                   </div>
+                  <div className="slick-slide-label"></div>
                 </div>
-                <div className="slick-slide-label"></div>
-              </div>
-            ))}
-          </Slider>
+              ))}
+            </Slider>
+          </div>
         </div>
-      </div>
-      <div className="row no-gutters mb-3">
-        <div className="col-lg-8 col-md-8 col-sm-12 col-12 mx-auto">
-          <div className="row no-gutters">
-            <div className="col-lg-6 col-md-6 col-6 col-sm-6 mx-auto">
-              <div className="book-now-new text-white font-weight-bold active text-center py-2">
-                Book Now
+        <div className="row no-gutters mb-3">
+          <div className="col-lg-8 col-md-8 col-sm-12 col-12 mx-auto">
+            <div className="row no-gutters">
+              <div className="col-lg-6 col-md-6 col-6 col-sm-6 mx-auto">
+                <div className="book-now-new text-white font-weight-bold active text-center py-2">
+                  Book Now
+                </div>
               </div>
-            </div>
-            <div className="col-lg-6 col-md-6 col-6 col-sm-6 mx-auto">
-              <div className="call-now text-blue bg-white font-weight-bold text-center py-2">
-                Call Now
+              <div className="col-lg-6 col-md-6 col-6 col-sm-6 mx-auto">
+                <div className="call-now text-blue bg-white font-weight-bold text-center py-2">
+                  Call Now
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </React.Fragment>
   );
 }
 
