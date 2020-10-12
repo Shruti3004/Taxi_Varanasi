@@ -13,6 +13,31 @@ import photo7 from "../../images/photo7.jpeg";
 import { DetailsContext } from "../../context/context";
 
 function NewHomePage() {
+  const [collection , setCollection] = useState('')
+const quotes = [
+  "Take your touring experience to another level",
+  "Fasten your seat belts and brace yourself",
+  "Be the first one in town to get on board with us",
+  "Planning a trip to varansi? Do it with taxi in varanasi",
+  "Get the best out of an unplanned trip with us",
+  "We partnered up with city's top car and best can driver to give you an amazing experience round the town",
+  "Enjoy a hassle free ride in our frequently sanitized cabs",
+  "Panic mode : OFF! ❌ ESSENTIALS ARE ON! ✔️",
+];
+useEffect(() => {
+  const interval = setInterval(() => {
+    setQuote()
+   }, 3000);
+   return() => {
+     clearInterval(interval)
+   }
+},)
+
+
+const setQuote = () => {
+  const rand = Math.floor(Math.random() * (7 - 0)) + 0;
+  setCollection(quotes[rand])
+}
   const { newHome } = useContext(DetailsContext);
   const { article } = newHome;
   const [nav1, setNav1] = useState(null);
@@ -38,6 +63,7 @@ function NewHomePage() {
 
   return (
     <React.Fragment>
+      <div className="text-dark text-center py-2 quote">{collection}</div>
       <section>
         <div className="icons">
           <div className="loop">
