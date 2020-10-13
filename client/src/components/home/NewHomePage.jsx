@@ -11,6 +11,7 @@ import photo5 from "../../images/photo5.jpeg";
 import photo6 from "../../images/photo6.jpeg";
 import photo7 from "../../images/photo7.jpeg";
 import { DetailsContext } from "../../context/context";
+import Carousel from "react-bootstrap/Carousel";
 
 function NewHomePage() {
   const [collection , setCollection] = useState('')
@@ -27,7 +28,7 @@ const quotes = [
 useEffect(() => {
   const interval = setInterval(() => {
     setQuote()
-   }, 3000);
+   }, 5000);
    return() => {
      clearInterval(interval)
    }
@@ -45,6 +46,10 @@ const setQuote = () => {
   const [slider1, setSlider1] = useState(null);
   const [slider2, setSlider2] = useState(null);
 
+const [index, setIndex] = useState(0);
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
   useEffect(() => {
     setNav1(slider1);
     setNav2(slider2);
@@ -64,7 +69,7 @@ const setQuote = () => {
   return (
     <React.Fragment>
       <div className="text-dark text-center py-2 quote">{collection}</div>
-      <section>
+      {/* <section>
         <div className="icons">
           <div className="loop">
             <div className="span one">
@@ -113,24 +118,24 @@ const setQuote = () => {
             </div>
           </div>
         </div>
-      </section>
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-10 col-md-12 col-sm-12 col-12 mb-5 mt-3 mx-auto">
-            <Slider
-              {...settingsMain}
-              asNavFor={nav2}
-              ref={(slider) => setSlider1(slider)}
-            >
-              {article.map((slide) => (
-                <div className="slick-slide" key={slide.id}>
+      </section> */}
+      <div className="carousel-custom">
+        <Carousel activeIndex={index} onSelect={handleSelect} fade>
+        {article.map(slide => (
+          <Carousel.Item className="carousel-custom">
+              <div className="row">
+                <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                   <div className="card">
                     <div className="card-body py-2 px-0 pt-0">
                       <img
-                        className="slick-slide-image img-fluid w-100"
+                        className="slick-slide-image img-fluid w-100 p-3"
                         src={slide.image}
                       />
-                      <div className="table-responsive">
+                    </div>
+                  </div>
+                </div>              
+                <div className="col-lg-6 col-md-12 col-sm-12 col-12">
+                  <div className="table-responsive">
                         <table className="table table-bordered">
                           <thead>
                             <tr className="pb-0">
@@ -172,10 +177,132 @@ const setQuote = () => {
                           </tbody>
                         </table>
                       </div>
+                </div>              
+              </div>                        
+          </Carousel.Item>
+        ))}    
+        </Carousel>
+      </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12 col-md-12 col-sm-12 col-12 mb-5 mt-3 mx-auto">
+            <Slider
+              {...settingsMain}
+              asNavFor={nav2}
+              ref={(slider) => setSlider1(slider)}
+            >
+              {article.map((slide) => (
+                <div className="row">
+                  <div className="col-lg-6 col-md-12 col-sm-12 col-12">
+                    {/* <div className="slick-slide" key={slide.id}> */}
+                      <div className="card">
+                        <div className="card-body py-2 px-0 pt-0">
+                          <img
+                            className="slick-slide-image img-fluid w-100 p-3"
+                            src={slide.image}
+                          />
+                        </div>
+                      </div>
                     </div>
+                  {/* </div> */}
+                  <div className="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div className="table-responsive">
+                        <table className="table table-bordered">
+                          <thead>
+                            <tr className="pb-0">
+                              <th className="active">
+                                <p className="text-center text-white py-0 my-0">
+                                  City Ride
+                                </p>
+                              </th>
+                              <th className="active">
+                                <p className="text-center text-white py-0 my-0">
+                                  Outstation
+                                </p>
+                              </th>
+                              <th className="active">
+                                <p className="text-center text-white py-0 my-0">
+                                  Airport
+                                </p>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr className="pb-0">
+                              <td className="bg-white">
+                                <p className="text-center font-weight-bold text-blue py-0 my-0">
+                                  &#x20B9;2000km/day
+                                </p>
+                              </td>
+                              <td className="bg-white">
+                                <p className="text-center font-weight-bold text-blue py-0 my-0">
+                                  &#x20B9;10km/hr
+                                </p>
+                              </td>
+                              <td className="bg-white">
+                                <p className="text-center font-weight-bold text-blue py-0 my-0">
+                                  &#x20B9;800
+                                </p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                   </div>
-                  <div className="slick-slide-label"></div>
                 </div>
+                // <div className="slick-slide" key={slide.id}>
+                //   <div className="card">
+                //     <div className="card-body py-2 px-0 pt-0">
+                //       <img
+                //         className="slick-slide-image img-fluid w-100 p-5"
+                //         src={slide.image}
+                //       />
+                //       <div className="table-responsive">
+                //         <table className="table table-bordered">
+                //           <thead>
+                //             <tr className="pb-0">
+                //               <th className="active">
+                //                 <p className="text-center text-white py-0 my-0">
+                //                   City Ride
+                //                 </p>
+                //               </th>
+                //               <th className="active">
+                //                 <p className="text-center text-white py-0 my-0">
+                //                   Outstation
+                //                 </p>
+                //               </th>
+                //               <th className="active">
+                //                 <p className="text-center text-white py-0 my-0">
+                //                   Airport
+                //                 </p>
+                //               </th>
+                //             </tr>
+                //           </thead>
+                //           <tbody>
+                //             <tr className="pb-0">
+                //               <td className="bg-white">
+                //                 <p className="text-center font-weight-bold text-blue py-0 my-0">
+                //                   &#x20B9;2000km/day
+                //                 </p>
+                //               </td>
+                //               <td className="bg-white">
+                //                 <p className="text-center font-weight-bold text-blue py-0 my-0">
+                //                   &#x20B9;10km/hr
+                //                 </p>
+                //               </td>
+                //               <td className="bg-white">
+                //                 <p className="text-center font-weight-bold text-blue py-0 my-0">
+                //                   &#x20B9;800
+                //                 </p>
+                //               </td>
+                //             </tr>
+                //           </tbody>
+                //         </table>
+                //       </div>
+                //     </div>
+                //   </div>
+                  // <div className="slick-slide-label"></div>
+                // </div>
               ))}
             </Slider>
           </div>

@@ -2,7 +2,7 @@ export const DataNewHome = {
   article: [
     {
       id: 1,
-      image: "../images/dezire-png.png",
+      image: "../images/seden.png",
       imageBlog: "Pickup/Drop Rs-750",
       heading: "Book Cab At Varanasi Airport",
       paragraph:
@@ -35,7 +35,7 @@ export const DataNewHome = {
     },
     {
       id: 3,
-      image: "../images/mini-bus.png",
+      image: "../images/miniBus.png",
       imageBlog: "Culture",
       heading: "Book Car for Sarnath Darshan in Varanasi",
       paragraph:
