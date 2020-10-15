@@ -34,10 +34,10 @@ require("./email")(app);
 // });
 
 // Serving of Data From Backend
-app.get("/dataAbout", (req, res) => {
+app.get("/about", (req, res) => {
   res.json(dataAbout);
 });
-app.get("/dataKashi", (req, res) => {
+app.get("/kashiVishwanath", (req, res) => {
   res.json(dataKashi);
 });
 app.get("/dataPlaces", (req, res) => {

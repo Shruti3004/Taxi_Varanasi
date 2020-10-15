@@ -4,11 +4,14 @@ import Varanasi from "../../images/varanasi.jpg";
 import SubDetails from "../mutual/SubDetails";
 import axios from "axios";
 
-function About() {
+function About({match}) {
+  console.log(match.params.name);
+  const xyx = match.params.name;
+  console.log('Hey Shruti');
   const [data, setData] = useState({});
   const dataAbout = async () => {
     try {
-      var url = "/dataAbout";
+      var url = `/${xyx}`;
       var request = {
         url,
         method: "get",
